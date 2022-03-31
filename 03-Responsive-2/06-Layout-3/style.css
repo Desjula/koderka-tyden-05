@@ -5,23 +5,23 @@ body {
 	font-family: sans-serif;
 }
 
-header, footer, article, nav, aside, .reklama1, .reklama2 {
+header, footer, article, nav, aside, .nabidka1, .nabidka2 {
 	padding: 20px;
 }
 
-header > :first-child, footer > :first-child, article > :first-child, nav > :first-child, .reklama1 > :first-child, .reklama2 > :first-child {
+header > :first-child, footer > :first-child, article > :first-child, nav > :first-child, .nabidka1 > :first-child, .reklama2 > :first-child {
 	margin-top: 0;
 }
 
-header > :last-child, footer > :last-child, article > :last-child, nav > :last-child, aside > :last-child, .reklama1 > :last-child, .reklama2 > :last-child {
+header > :last-child, footer > :last-child, article > :last-child, nav > :last-child, aside > :last-child, .nabidka1 > :last-child, .reklama2 > :last-child {
 	margin-bottom: 0;
 }
 
 .hlavicka { background-color: #2ecc71; }
 .menu 		{ background-color: #e74c3c; }
 .obsah		{ background-color: #f1c40f ; }
-.reklama1	{ background-color: #8e44ad; }
-.reklama2	{ background-color: mediumturquoise; }
+.nabidka1	{ background-color: #8e44ad; }
+.nabidka2	{ background-color: mediumturquoise; }
 .paticka 	{ background-color: dodgerblue; }
 
 /* ---------------------------------------------------- */
@@ -33,3 +33,56 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	- 1000px
 */
 
+.nabidka1{
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 640px) {
+	
+	.obsah{
+		display: flex;
+	}
+
+	.clanek{
+		flex: 0 0 60%;
+	}
+
+	.nabidka{
+		flex: 0 0 40%
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.kontejner{
+		display: flex;
+	}
+
+	.menu{
+		flex: 0 0 25%;
+	}
+
+	.obsah{
+		flex: 0 0 75%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+		.clanek{
+			flex: 0 0 100%;
+		}
+/*
+		.nabidka{
+			flex-wrap: nowrap;
+		}
+
+		.nabidka1, .nabidka2{
+			flex: 1 1 50%;
+		}*/
+
+		.nabidka1{
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
+}
+
+/*reklamy nejdou při největším zvětšení vedle sebe !!!!!!*/

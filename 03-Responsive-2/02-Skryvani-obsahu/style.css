@@ -24,14 +24,18 @@ Nastav CSS pro třídu .banner tak, aby:
 - na obrazovce širší než 800px se banner zobrazí
 */
 
-@media screen and (max-width: 800px) {
+.banner{
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
 
 	.konterjner{
 		display: flex;
 	}
 
 	.banner{
-		display: none;
+		display: block;
 	}
 	
 }
