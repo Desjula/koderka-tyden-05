@@ -41,3 +41,56 @@ a:hover {
 	background-color: #e74c3c;
 	color: white;
 }
+
+li{
+	list-style-type: none;
+	margin: 2px 0;
+}
+
+.logo{
+	margin-bottom: 20px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: center;
+}
+
+@media screen and (min-width: 640px){
+
+	.menu{
+		display: flex;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+	}
+	li{
+		display: inline-block;
+		margin: 0 1px;
+		width: calc((100% - 6px) / 4);
+	}
+
+	ul{
+		padding: 0%;
+		flex: 1 1 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.hlavicka{
+		display: flex;
+		position: relative;
+	}
+
+	.menu{
+		position: absolute;
+		right: 10px;
+	}
+
+	.logo{
+		margin: 10px 0;
+	}
+}

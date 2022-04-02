@@ -65,24 +65,25 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 		flex: 0 0 75%;
 		display: flex;
 		flex-wrap: wrap;
+		margin-right: 8px;
 	}
 
-		.clanek{
-			flex: 0 0 100%;
-		}
-/*
-		.nabidka{
-			flex-wrap: nowrap;
-		}
+	.clanek{
+		flex: 0 0 100%;
+	}
 
-		.nabidka1, .nabidka2{
-			flex: 1 1 50%;
-		}*/
+	.nabidka{
+		flex-wrap: nowrap;
+	}
+	.nabidka1, .nabidka2{
+		flex: 0 0 100%;
 
-		.nabidka1{
-			margin-right: 20px;
-			margin-bottom: 0;
-		}
+	}
+
+	.nabidka1{
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
 }
 
 /*reklamy nejdou při největším zvětšení vedle sebe !!!!!!*/
