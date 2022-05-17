@@ -75,6 +75,7 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	.nabidka{
 		flex-wrap: nowrap;
 	}
+	
 	.nabidka1, .nabidka2{
 		flex: 0 0 100%;
 
